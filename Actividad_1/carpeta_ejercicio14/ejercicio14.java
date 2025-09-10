@@ -13,7 +13,7 @@ public class ejercicio14 {
         double numero_leido = scanner.nextDouble();
 
         cuadrado = calculos_potencias.calcular_cuadrado(numero_leido);
-        cubo = calculos_potencias.calcular_cuadrado(numero_leido);
+        cubo = calculos_potencias.calcular_cubo(numero_leido);
 
         System.out.println("El numero leído es: " + numero_leido);
         System.out.println("El cuadrado del número es: " + cuadrado);

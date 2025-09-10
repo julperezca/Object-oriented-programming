@@ -16,8 +16,5 @@ public class calculos_edades{
         double edad_madre = edad_ana + edad_alberto + edad_juan;
         return edad_madre;
     }
-
-
-
 }
 
