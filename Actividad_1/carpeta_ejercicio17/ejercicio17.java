@@ -1,6 +1,6 @@
-package Actividad_1;
+package Actividad_1.carpeta_ejercicio17;
 
-import Actividad_1.clases.calculos;
+import Actividad_1.carpeta_ejercicio17.calculos_cincunferencia;
 import java.util.Scanner;
 public class ejercicio17 {
 
@@ -11,8 +11,8 @@ public class ejercicio17 {
     System.out.print("Ingrese el radio del circulo: "); // lee teclado y asigna valor a variable horas_trabajadas
     double radio_leido = scanner.nextDouble();
 
-    perimetro =  calculos.calcular_perimetro_circunferencia(radio_leido);
-    area = calculos.calcular_area_circulo(radio_leido);
+    perimetro =  calculos_cincunferencia.calcular_perimetro_circunferencia(radio_leido);
+    area = calculos_cincunferencia.calcular_area_circulo(radio_leido);
     
     System.out.println("El perimetro del circulo es: " + perimetro);
     System.out.println("El área del circulo es: " + area);

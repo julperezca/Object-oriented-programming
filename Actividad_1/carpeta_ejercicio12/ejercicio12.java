@@ -1,6 +1,6 @@
-package Actividad_1;
+package Actividad_1.carpeta_ejercicio12;
 
-import Actividad_1.clases.calculos;
+import Actividad_1.carpeta_ejercicio12.calculos_ingresos;
 import java.util.Scanner;
 
 public class ejercicio12 {
@@ -24,10 +24,10 @@ public class ejercicio12 {
         double retencion = scanner.nextDouble();
         scanner.close();
 
-        salario_bruto = calculos.calcular_salario_bruto(valor_por_hora, horas_trabajadas);
-        porcentaje_retencion = calculos.calcular_porcentaje_retencion(retencion);
-        valor_retencion = calculos.calcular_retencion(salario_bruto, porcentaje_retencion);
-        salario_neto = calculos.calcular_salario_neto(valor_retencion, salario_bruto);
+        salario_bruto = calculos_ingresos.calcular_salario_bruto(valor_por_hora, horas_trabajadas);
+        porcentaje_retencion = calculos_ingresos.calcular_porcentaje_retencion(retencion);
+        valor_retencion = calculos_ingresos.calcular_retencion(salario_bruto, porcentaje_retencion);
+        salario_neto = calculos_ingresos.calcular_salario_neto(valor_retencion, salario_bruto);
 
         System.out.println("Salario bruto: " + salario_bruto);
         System.out.println("Valor retención: " + valor_retencion);

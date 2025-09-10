@@ -1,6 +1,6 @@
-package Actividad_1;
+package Actividad_1.carpeta_ejercicio5;
 
-import Actividad_1.clases.calculos;
+import Actividad_1.carpeta_ejercicio5.calculos;
 import java.util.Scanner;
 
 public class ejercicio5 {

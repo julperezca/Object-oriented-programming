@@ -1,8 +1,8 @@
-package Actividad_1;
+package Actividad_1.carpeta_ejercicio14;
 
 import java.util.Scanner;
 
-import Actividad_1.clases.calculos;
+import Actividad_1.carpeta_ejercicio14.calculos_potencias;
 
 public class ejercicio14 {
     public static void main(String[] args){
@@ -13,8 +13,8 @@ public class ejercicio14 {
         System.out.print("Ingrese el numero a leer: "); // lee teclado y asigna valor a variable horas_trabajadas
         double numero_leido = scanner.nextDouble();
 
-        cuadrado = calculos.calcular_cuadrado(numero_leido);
-        cubo = calculos.calcular_cuadrado(numero_leido);
+        cuadrado = calculos_potencias.calcular_cuadrado(numero_leido);
+        cubo = calculos_potencias.calcular_cuadrado(numero_leido);
 
         System.out.println("El numero leído es: " + numero_leido);
         System.out.println("El cuadrado del número es: " + cuadrado);
