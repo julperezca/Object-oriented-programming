@@ -1,6 +1,6 @@
 package Actividad_1.carpeta_ejercicio4;
 
-import Actividad_1.carpeta_ejercicio4.calculos_edades;
+
 import java.util.Scanner;
 public class ejercicio4 {
     public static void main(String[] args) {

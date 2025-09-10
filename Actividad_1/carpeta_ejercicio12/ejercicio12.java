@@ -1,6 +1,5 @@
 package Actividad_1.carpeta_ejercicio12;
 
-import Actividad_1.carpeta_ejercicio12.calculos_ingresos;
 import java.util.Scanner;
 
 public class ejercicio12 {

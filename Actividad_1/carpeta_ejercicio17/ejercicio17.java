@@ -1,6 +1,5 @@
 package Actividad_1.carpeta_ejercicio17;
 
-import Actividad_1.carpeta_ejercicio17.calculos_cincunferencia;
 import java.util.Scanner;
 public class ejercicio17 {
 

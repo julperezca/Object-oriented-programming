@@ -2,7 +2,6 @@ package Actividad_1.carpeta_ejercicio14;
 
 import java.util.Scanner;
 
-import Actividad_1.carpeta_ejercicio14.calculos_potencias;
 
 public class ejercicio14 {
     public static void main(String[] args){
