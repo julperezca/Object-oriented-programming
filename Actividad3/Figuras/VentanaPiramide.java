@@ -30,10 +30,7 @@ setTitle("piramide"); // Establece el título de la ventana
 setSize(280,240); // Establece el t  amaño de la ventana
 setLocationRelativeTo(null); /* La ventana se posiciona en el
 centro de la pantalla */
-setResizable(false); 
-setVisible(true);
-/* Establece que el botón de cerrar permitirá
-
+setResizable(false); /* Establece que el botón de cerrar permitirá
 salir de la aplicación */
 }
 /**

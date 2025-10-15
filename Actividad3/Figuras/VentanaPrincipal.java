@@ -84,7 +84,7 @@ VentanaCilindro cilindro = new VentanaCilindro(); /* Crea la
 ventana del cilindro */
 cilindro.setVisible(true); /* Establece que se visualice la
 ventana del cilindro */
-
+}
 if (evento.getSource() == piramide) { /* Si se pulsa el botón
 piramide */
 VentanaPiramide piramide = new VentanaPiramide(); /* Crea
@@ -94,4 +94,4 @@ ventana de la piramide */
 }
 }
 }
-}
+
