@@ -1,4 +1,4 @@
-package Notas;
+package Actividad3.Notas;
 /**
 * Esta clase denominada Notas define un array de notas numéricas de
 * tipo double.

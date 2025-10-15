@@ -1,4 +1,4 @@
-package Notas;
+package Actividad3.Notas;
 /**
 * Esta clase define el punto de ingreso al programa de operaciones
 * sobre notas. Por lo tanto, cuenta con un método main de acceso al
