@@ -17,7 +17,7 @@ ActionListener {
 // Un contenedor de elementos gráficos
 private Container contenedor;
 // Botones para seleccionar una figura geométrica determinada
-private JButton cilindro, esfera, pirámide;
+private JButton cilindro, esfera, piramide;
 /**
 * Constructor de la clase VentanaPrincipal
 */
@@ -55,18 +55,18 @@ botón de la esfera */
 /* Agrega al botón un ActionListener para que gestione eventos
 del botón */
 esfera.addActionListener(this);
-// Establece el botón de la pirámide
-pirámide = new JButton();
-pirámide.setText("Pirámide");
-pirámide.setBounds(225, 50, 100, 23); /* Establece la posición
-del botón de la pirámide */
+// Establece el botón de la piramide
+piramide = new JButton();
+piramide.setText("piramide");
+piramide.setBounds(225, 50, 100, 23); /* Establece la posición
+del botón de la piramide */
 /* Agrega al botón un ActionListener para que gestione eventos
 del botón */
-pirámide.addActionListener(this);
+piramide.addActionListener(this);
 // Se añade cada componente gráfico al contenedor de la ventana
 contenedor.add(cilindro);
 contenedor.add(esfera);
-contenedor.add(pirámide);
+contenedor.add(piramide);
 }
 /**
 * Método que gestiona los eventos generados en la ventana principal
@@ -85,12 +85,12 @@ ventana del cilindro */
 cilindro.setVisible(true); /* Establece que se visualice la
 ventana del cilindro */
 
-if (evento.getSource() == pirámide) { /* Si se pulsa el botón
-pirámide */
-VentanaPirámide pirámide = new VentanaPirámide(); /* Crea
-la ventana de la pirámide */
-pirámide.setVisible(true); /* Establece que se visualice la
-ventana de la pirámide */
+if (evento.getSource() == piramide) { /* Si se pulsa el botón
+piramide */
+VentanaPiramide piramide = new VentanaPiramide(); /* Crea
+la ventana de la piramide */
+piramide.setVisible(true); /* Establece que se visualice la
+ventana de la piramide */
 }
 }
 }

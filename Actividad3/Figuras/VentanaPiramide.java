@@ -6,11 +6,11 @@ import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 /**
-* Esta clase denominada VentanaPirámide define una ventana para
-* ingresar los datos de una pirámide y calcular su volumen y superficie.
+* Esta clase denominada Ventanapiramide define una ventana para
+* ingresar los datos de una piramide y calcular su volumen y superficie.
 * @version 1.2/2020
 */
-public class VentanaPirámide extends JFrame implements
+public class VentanaPiramide extends JFrame implements
 ActionListener {
 // Un contenedor de elementos gráficos
 private Container contenedor;
@@ -22,15 +22,18 @@ private JTextField campoBase, campoAltura, campoApotema;
 // Botón para realizar los cálculos numéricos
 private JButton calcular;
 /**
-* Constructor de la clase VentanaPirámide
+* Constructor de la clase Ventanapiramide
 */
-public VentanaPirámide() {
+public VentanaPiramide() {
 inicio();
-setTitle("Pirámide"); // Establece el título de la ventana
-setSize(280,240); // Establece el tamaño de la ventana
+setTitle("piramide"); // Establece el título de la ventana
+setSize(280,240); // Establece el t  amaño de la ventana
 setLocationRelativeTo(null); /* La ventana se posiciona en el
 centro de la pantalla */
-setResizable(false); /* Establece que el botón de cerrar permitirá
+setResizable(false); 
+setVisible(true);
+/* Establece que el botón de cerrar permitirá
+
 salir de la aplicación */
 }
 /**
@@ -43,37 +46,37 @@ contenidos de la ventana */
 contenedor.setLayout(null); /* Establece que el contenedor no
 tiene un layout */
 /* Establece la etiqueta y campo de texto para la base de la
-pirámide */
+piramide */
 base = new JLabel();
 base.setText("Base (cms):");
-// Establece la posición de la etiqueta de la base de la pirámide
+// Establece la posición de la etiqueta de la base de la piramide
 base.setBounds(20, 20, 135, 23);
 campoBase = new JTextField();
 /* Establece la posición del campo de texto de la base de la
-pirámide */
+piramide */
 campoBase.setBounds(120, 20, 135, 23);
 /* Establece la etiqueta y campo de texto para la altura de la
-pirámide */
+piramide */
 altura = new JLabel();
 altura.setText("Altura (cms):");
-// Establece la posición de la etiqueta de la altura de la pirámide
+// Establece la posición de la etiqueta de la altura de la piramide
 altura.setBounds(20, 50, 135, 23);
 campoAltura = new JTextField();
 /* Establece la posición del campo de texto de la altura de la
-pirámide */
+piramide */
 campoAltura.setBounds(120, 50, 135, 23);
 /* Establece la etiqueta y campo de texto para el apotema de la
-pirámide */
+piramide */
 apotema = new JLabel();
 apotema.setText("Apotema (cms):");
-// Establece la posición de la etiqueta del apotema de la pirámide
+// Establece la posición de la etiqueta del apotema de la piramide
 apotema.setBounds(20, 80, 135, 23);
 campoApotema = new JTextField();
 /* Establece la posición del campo de texto del apotema de la
-pirámide */
+piramide */
 campoApotema.setBounds(120, 80, 135, 23);
 /* Establece el botón para calcular volumen y superficie de la
-pirámide */
+piramide */
 calcular = new JButton();
 calcular.setText("Calcular");
 calcular.setBounds(120, 110, 135, 23); /* Establece la posición
@@ -81,15 +84,15 @@ del botón calcular */
 /* Agrega al botón un ActionListener para que gestione eventos
 del botón */
 calcular.addActionListener(this);
-// Establece la etiqueta y el valor del volumen de la pirámide
+// Establece la etiqueta y el valor del volumen de la piramide
 volumen = new JLabel();
 volumen.setText("Volumen (cm3):");
-// Establece la posición de la etiqueta de volumen de la pirámide
+// Establece la posición de la etiqueta de volumen de la piramide
 volumen.setBounds(20, 140, 135, 23);
-// Establece la etiqueta y el valor de la superficie de la pirámide
+// Establece la etiqueta y el valor de la superficie de la piramide
 superficie = new JLabel();
 superficie.setText("Superficie (cm2):");
-// Establece la posición de la etiqueta de superficie de la pirámide
+// Establece la posición de la etiqueta de superficie de la piramide
 superficie.setBounds(20, 170, 135, 23);
 // Se añade cada componente gráfico al contenedor de la ventana
 contenedor.add(base);
@@ -108,7 +111,7 @@ contenedor.add(superficie);
 * error en formato de número
 */
 public void actionPerformed(ActionEvent event) {
-Piramide pirámide;
+Piramide piramide;
 boolean error = false;
 double base = 0;
 double altura = 0;
@@ -120,14 +123,14 @@ base = Double.parseDouble(campoBase.getText());
 altura = Double.parseDouble(campoAltura.getText());
 // Se obtiene y convierte el valor numérico del apotema
 apotema = Double.parseDouble(campoApotema.getText());
-// Se crea un objeto Pirámide
-pirámide = new Piramide(base, altura, apotema);
+// Se crea un objeto piramide
+piramide = new Piramide(base, altura, apotema);
 // Se muestra el volumen
 volumen.setText("Volumen (cm3): " + String.format("%.2f",
-pirámide.calcularVolumen()));
+piramide.calcularVolumen()));
 // Se muestra la superficie
 superficie.setText("Superficie (cm2): " + String.format("%.2f",
-pirámide.calcularSuperficie()));
+piramide.calcularSuperficie()));
 } catch (Exception e) {
 error = true; // Si ocurre una excepción
 } finally {
