@@ -1,0 +1,11 @@
+Nombre = Pepito
+Apellidos = Pérez
+Cargo = Directivo
+Género = Masculino
+Salario por día = $1000000.0
+Días trabajados = 30
+Otros ingresos = $800000.0
+Pagos por salud = $600000.0
+Aporte pensiones = $300000.0
+---------
+Total nómina = $29900000,00
